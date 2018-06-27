@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 flask = "==0.10.1"
+gunicorn = "*"
 
 [dev-packages]
 
