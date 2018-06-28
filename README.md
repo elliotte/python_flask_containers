@@ -1,13 +1,22 @@
 ## Flask Tutorial
 
+Deployment [tutorial](https://opensource.com/article/18/1/running-python-application-kubernetes)
+
 Tutorial taken from [here](https://realpython.com/flask-by-example-part-1-project-setup/)
+
+Other tutorial [here](https://github.com/honestbee/flask_app_k8s)
+
+[Beginner](https://github.com/docker/labs/tree/bd6bcaa1e25e75dc3611ea063b3d38c65e205141/beginner/flask-app) Flask App
+
+[Google](https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app)
 
 ## Heroku 
 
 Now we can push both of our apps live to Heroku.
 
-- For staging: git push stage master
-- For production: git push pro master
+- For staging: `git push stage master`
+
+- For production: `git push pro master`
 
 ` heroku open --app <app-name>`
 
@@ -29,7 +38,7 @@ Staging:
 `heroku run python app.py --app app-stage-m`
 
 Pro:
-`heroku run python app.py --app app-test-pro`
+`heroku run python app.py --app app-test-pr`
 
 ## SSH
 
@@ -52,3 +61,16 @@ echo "source $(brew --prefix autoenv)/activate.sh" >> ~/.bash_profile
 
 The command missing to make it work, within the project directory:
 `virtualenv ENV`
+
+## Google Cloud
+
+Deploying instructions taken from [here](https://cloud.google.com/community/tutorials/envoy-flask-google-container-engine)
+
+### 1. Get Google Cloud Account [here](https://console.cloud.google.com/projectselector/kubernetes/list?supportedpurview=project)
+### 2. Need `Kubect1` so:
+	- `brew install kubernetes-cli`
+	- `brew install docker`
+
+
+
+
