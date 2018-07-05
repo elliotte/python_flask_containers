@@ -10,6 +10,11 @@ Other tutorial [here](https://github.com/honestbee/flask_app_k8s)
 
 [Google](https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app)
 
+## Testing
+
+- [Application Factories](http://flask.pocoo.org/docs/1.0/patterns/appfactories/)
+- [Using WebTest](https://docs.pylonsproject.org/projects/webtest/en/latest/)
+
 ## Heroku 
 
 Now we can push both of our apps live to Heroku.
@@ -51,6 +56,8 @@ See [article](https://devcenter.heroku.com/articles/keys)
 This staging/production workflow allows us to make changes, show things to clients, experiment, etc. - all within a sandboxed server without causing any changes to the live production site that users are, well, using.
 
 ## Local settings
+
+Added a fix so once `cd` into directory loads local settings relevant automatically.
 
 Didn't work originally.  So did the install per [repo page](https://github.com/kennethreitz/autoenv), updated `.bashrc` file and setup the `.env` file.
 
